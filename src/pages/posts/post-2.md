@@ -18,5 +18,13 @@ tags: ["astro", "blogging", "learning in public", "successes"]
 3. I'm learning how to use Markdown.
 
 ## Taking Stock
-- Feeling gooder than before though not good enough to be the goodest; thats goodly; i think ':]'
-- Presently helping with the onslaught of imposter syndrome symptomatic "feels" that have been ongoing since "fgraduation"
+- Feeling gooder than before though not good enough to be the goodest; 
+> thats  goodly; i think ':]'
+> 
+- Presently helping with the onslaught of imposter syndrome symptomatic
+> "feels" that have been ongoing since "fgraduation"
+
+
+## Whats Next 
+
+> Keep Familiarizing Myself with this environment

@@ -26,4 +26,5 @@ tags: ["astro", "learning in public", "setbacks", "community"]
 
 ## Whats' Next?
 
-> I'm going to continue to learn and build with Astro; aiming to get more dynamic.
+- [ ]  I'm going to continue to learn and build with Astro; 
+- [ ] aiming to get more dynamic.

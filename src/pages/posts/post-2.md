@@ -27,4 +27,4 @@ tags: ["astro", "blogging", "learning in public", "successes"]
 
 ## Whats Next 
 
-> Keep Familiarizing Myself with this environment
+- [ ] Keep Familiarizing Myself with this environment

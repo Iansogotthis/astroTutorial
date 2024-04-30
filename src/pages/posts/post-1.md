@@ -1,21 +1,22 @@
 ---
-title: 'My First Blog Post'
-pubDate: '2024-04-30'
-description: 'This is the first post of my new Astro blog.'
-author: 'Astro Learner'
+title: "My First Blog Post"
+pubDate: "2024-04-30"
+description: "This is the first post of my new Astro blog."
+author: "Astro Learner"
 image:
-  url: 'https://docs.astro.build/assets/full-logo-light.png'
-  alt: 'The full Astro logo on a white background.'
+  url: "https://docs.astro.build/assets/full-logo-light.png"
+  alt: "The full Astro logo on a white background."
 tags: ["astro", "blogging", "learning in public"]
 ---
 
 [Back to Blog](https://gryn-astro-demo.netlify.app/blog/)
 
-# My First Post
+## My First Post
 
-Published on: April 30th, 2024
+### Published on: April 30th, 2024
 
-Welcome to my *new blog* about learning Astro! Here, I will share my learning journey as I build a new website.
+> <p style="text-align: center" >Welcome to my new blog about learning Astro!<br/> Here, I will share my 
+> learning journey as I build a new website</p>
 
 ### What I've Learned So Far
 
@@ -25,4 +26,5 @@ Welcome to my *new blog* about learning Astro! Here, I will share my learning jo
 
 ### What's Next
 
-> I will finish the Astro tutorial, and then keep adding more posts. Watch this > space for more to come.
+- [ ] I will finish the Astro tutorial, and then keep adding more posts.
+- [ ] Watch this space for more to come.

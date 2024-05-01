@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: "My First Blog Post"
 pubDate: "2024-04-30"
 description: "This is the first post of my new Astro blog."
@@ -11,7 +12,7 @@ tags: ["astro", "blogging", "learning in public"]
 <style>
   body {
     text-align: center;
-    font-size: 1.23rem;
+   
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     color: #333;
@@ -26,6 +27,7 @@ tags: ["astro", "blogging", "learning in public"]
   }
 
   .container {
+    text-align: center;
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;

@@ -1,11 +1,14 @@
 ---
--import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 const {pageTitle} = Astro.props;
-
+ 
 ---
 
 <body style="background-color: orange;">
 <BaseLayout pageTitle={pageTitle}>
 
   </BaseLayout>
+ <script> 
+  import "../scripts/menu.js";
+  </script>
 </body>

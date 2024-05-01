@@ -1,5 +1,5 @@
 ---
-const pageTitle = "About Me"
+const pageTitle = "About Me";
 
 const identity = {
   firstName: "Ian",
@@ -11,51 +11,113 @@ const identity = {
 const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "MongoDb"];
 
 const happy = true;
-const finished = false;
+const finished = true;
 const goal = 3;
+
+const skillColor = "white";
+
+// Randomly select two hobbies
+const randomIndexes = [];
+while (randomIndexes.length < 2) {
+  const index = Math.floor(Math.random() * identity.hobbies.length);
+  if (!randomIndexes.includes(index)) {
+    randomIndexes.push(index);
+  }
+}
+const randomHobbies = [identity.hobbies[randomIndexes[0]], identity.hobbies[randomIndexes[1]]];
+
+// Add two new hobbies
+identity.hobbies.push("reading", "cooking");
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-	</head>
-	<body>
-		<a href="/">Home</a>
-        <a href="/about/">About</a>
-        <a href="/blog/">Blog</a>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
+    <style define:vars={{ skillColor }}>
+      body {
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHuDg8rrcI9LHTgwFHcE6-mPsiasUnO27FZ4VWtJj4UWuUoRHUKXXKrBiriUM3qen-MKw&usqp=CAU");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
 
-        <h1>{pageTitle}</h1>
+      h1 {
+        color: rgba(255, 204, 0, 0.751);
+        font-size: 2.75rem;
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+        color: orangered;
+        font-size: mediumlarge;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
 
-        <h2>...And my First Ever Astro Site!</h2>
+      .skill {
+        color: var(--skillColor); /* Use var(--skillColor) here */
+        font-weight: bold;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="/">Home</a>
+    <a href="/about/">About</a>
+    <a href="/blog/">Blog</a>
 
-        <p style="text-align:center">After completeing my 420hrs at General Academy 
-        <br/>
-        I decided on learning a framework as my first independantly driven project.</p>
-        <p style="text-align:center"> I chose astro</p>
-        <section style="text-align: center;">___________________________________________</section>
-        <p>Im currently completing this tutorial... check back on the progress</p>
-        <p style="text-align:center">Here are a few facts about me:</p>
-<ul>
-  <li>My name is {identity.firstName}.</li>
-  <li>I live in {identity.country}.</li>
-  <li>I am passionately pursuing work as a {identity.occupation}.</li>
-  {identity.hobbies.length >= 2 &&
-    <li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>
-  }
-</ul>
-<p style="text-align: center;" >My skills are:</p>
-<ul>
-  {skills.map((skill) => <li>{skill}</li>)}
-</ul>
-<p>{happy && <p>I am happy to be learning Astro!</p>}
+    <h1>{pageTitle}</h1>
 
-{finished && <p>I finished this tutorial!</p>}
+    <h2>...And my First Ever Astro Site!</h2>
 
-{goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}</p>
+    <p style="text-align:center">
+      After completing my 420hrs at General Academy
+      <br />
+      I decided on learning a framework as my first independently driven project.
+    </p>
+    <p style="text-align:center">I chose Astro</p>
+    <section style="text-align: center;">
+      ___________________________________________
+    </section>
+    <p style="text-align:center">
+      I'm currently completing this tutorial... check back on the progress
+    </p>
+    <p style="text-align:center">Here are a few facts about me:</p>
+    <ul
+      style="text-align: center; opacity: 76%; list-style: none; color:yellow;  border-radius: 16%; text-decoration:underline; height: 5.1rem; margin:auto 1%"
+    >
+      <li style="">My name is {identity.firstName}.</li>
+      <li>I live in {identity.country}.</li>
+      <li>I am passionately pursuing work as a {identity.occupation}.</li>
+      {
+        identity.hobbies.length >= 2 && (
+          <li>
+            Two of my hobbies are: {randomHobbies[0]} and{" "}
+            {randomHobbies[1]}
+          </li>
+        )
+      }
+    </ul>
+    <p style="text-align: center;">My skills are:</p>
+    <ul style="list-style: none;">
+      {skills.map((skill) => <li class="skill">{skill}</li>)}
+    </ul>
+    <p>
+      {happy && <p style="text-align: center; color:antiquewhite" >Astro Seems Cool As Heck!</p>}
 
-	</body>
+      {happy && finished && <p style="text-align:center; color:orange" >I finished this tutorial!</p>}
+
+      {
+        goal === 3 ? (
+        <p style="text-align: center; color:antiquewhite" >My goal is to finish in 3 days.</p>
+        ) : (
+        <p style="text-align: center; color:antiquewhite" >My goal is not 3 days.</p>
+        )
+      }
+    </p>
+  </body>
 </html>

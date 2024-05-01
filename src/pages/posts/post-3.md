@@ -10,14 +10,20 @@ tags: ["astro", "learning in public", "setbacks", "community"]
 ---
 
 <style>
-  body {
+   body {
     text-align: center;
     font-size: 1.23rem;
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #333;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-image: url("/public/notep.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
   }
 
   .container {

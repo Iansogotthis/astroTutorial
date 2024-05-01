@@ -3,8 +3,8 @@ title: My Second Blog Post
 author: Astro Learner
 description: "After learning some Astro, I couldn't stop!"
 image:
-    url: "https://docs.astro.build/assets/arc.webp"
-    alt: "Thumbnail of Astro arcs."
+  url: "https://docs.astro.build/assets/arc.webp"
+  alt: "Thumbnail of Astro arcs."
 pubDate: 2022-07-08
 tags: ["astro", "blogging", "learning in public", "successes"]
 ---
@@ -13,11 +13,17 @@ tags: ["astro", "blogging", "learning in public", "successes"]
   body {
     text-align: center;
     font-size: 1.23rem;
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #333;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-image: url("/public/notep.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
   }
 
   .container {
@@ -74,7 +80,9 @@ tags: ["astro", "blogging", "learning in public", "successes"]
     margin-bottom: 20px;
   }
 </style>
+
 [Back to Blog](https://gryn-astro-demo.netlify.app/blog/)
+
 # My Second Post
 
 ## New Learings
@@ -84,13 +92,12 @@ tags: ["astro", "blogging", "learning in public", "successes"]
 3. I'm learning how to use Markdown.
 
 ## Taking Stock
-- Feeling gooder than before though not good enough to be the goodest; 
-> thats  goodly; i think ':]'
-> 
+
+- Feeling gooder than before though not good enough to be the goodest;
+  > thats goodly; i think ':]'
 - Presently helping with the onslaught of imposter syndrome symptomatic
-> "feels" that have been ongoing since "fgraduation"
+  > "feels" that have been ongoing since "fgraduation"
 
-
-## Whats Next 
+## Whats Next
 
 - [ ] Keep Familiarizing Myself with this environment

@@ -12,11 +12,17 @@ tags: ["astro", "blogging", "learning in public"]
   body {
     text-align: center;
     font-size: 1.23rem;
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #333;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-image: url("/public/notep.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
   }
 
   .container {
@@ -72,6 +78,9 @@ tags: ["astro", "blogging", "learning in public"]
   p {
     margin-bottom: 20px;
   }
+  .soFar{
+    text-align: left;
+  }
 </style>
 
 [Back to Blog](https://gryn-astro-demo.netlify.app/blog/)
@@ -85,9 +94,9 @@ tags: ["astro", "blogging", "learning in public"]
 
 ### What I've Learned So Far
 
-1. **Installing Astro**: First, I created a new Astro project and set up my online accounts.
-2. **Making a Page**: I've edited template code as well as made and published a few pages fully on my own.
-3. **A First 'Blog-type' Post**: Which is this page being viewed here.
+<p class = "soFar">1. **Installing Astro**: First, I created a new Astro project and set up my online accounts.</p>
+<p class = "soFar">2. **Making a Page**: I've edited template code as well as made and published a few pages fully on my own.</p>
+<p class = "soFar">3. **A First 'Blog-type' Post**: Which is this page being viewed here.</p>
 
 ### What's Next
 

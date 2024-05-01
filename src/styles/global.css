@@ -3,6 +3,7 @@ html {
 .links{
     display:flex;
     justify-content: space-between;
+    color: #ffffff;
     align-items: center;
     padding: 1rem;
     
@@ -11,7 +12,9 @@ html {
 .link{
     text-decoration: none;
     color: #000000;
-   
+      ;
+    background-color: grey;
+
     text-align :center;
     &:hover{
         text-decoration: underline;

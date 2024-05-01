@@ -1,4 +1,7 @@
 ---
+import "../styles/global.css";
+import Navigation from "../components/Navagation.astro";
+
 const pageTitle = "About Me";
 
 const identity = {
@@ -24,10 +27,13 @@ while (randomIndexes.length < 2) {
     randomIndexes.push(index);
   }
 }
-const randomHobbies = [identity.hobbies[randomIndexes[0]], identity.hobbies[randomIndexes[1]]];
+const randomHobbies = [
+  identity.hobbies[randomIndexes[0]],
+  identity.hobbies[randomIndexes[1]],
+];
 
-// Add two new hobbies
-identity.hobbies.push("reading", "cooking");
+const fontWeight = "bold";
+const textCase = "uppercase";
 ---
 
 <html lang="en">
@@ -37,7 +43,7 @@ identity.hobbies.push("reading", "cooking");
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
-    <style define:vars={{ skillColor }}>
+    <style define:vars={{ skillColor, fontWeight, textCase }}>
       body {
         background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHuDg8rrcI9LHTgwFHcE6-mPsiasUnO27FZ4VWtJj4UWuUoRHUKXXKrBiriUM3qen-MKw&usqp=CAU");
         background-repeat: no-repeat;
@@ -59,16 +65,15 @@ identity.hobbies.push("reading", "cooking");
       }
 
       .skill {
-        color: var(--skillColor); /* Use var(--skillColor) here */
-        font-weight: bold;
+        color: var(--skillColor);
+        font-weight: var(--fontWeight);
+        text-transform: var(--textCase);
         text-align: center;
       }
     </style>
   </head>
   <body>
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/blog/">Blog</a>
+    <Navigation />
 
     <h1>{pageTitle}</h1>
 
@@ -96,8 +101,7 @@ identity.hobbies.push("reading", "cooking");
       {
         identity.hobbies.length >= 2 && (
           <li>
-            Two of my hobbies are: {randomHobbies[0]} and{" "}
-            {randomHobbies[1]}
+            Two of my hobbies are: {randomHobbies[0]} and {randomHobbies[1]}
           </li>
         )
       }
@@ -107,15 +111,31 @@ identity.hobbies.push("reading", "cooking");
       {skills.map((skill) => <li class="skill">{skill}</li>)}
     </ul>
     <p>
-      {happy && <p style="text-align: center; color:antiquewhite" >Astro Seems Cool As Heck!</p>}
+      {
+        happy && (
+          <p style="text-align: center; color:antiquewhite">
+            Astro Seems Cool As Heck!
+          </p>
+        )
+      }
 
-      {happy && finished && <p style="text-align:center; color:orange" >I finished this tutorial!</p>}
+      {
+        happy && finished && (
+          <p style="text-align:center; color:orange">
+            I finished this tutorial!
+          </p>
+        )
+      }
 
       {
         goal === 3 ? (
-        <p style="text-align: center; color:antiquewhite" >My goal is to finish in 3 days.</p>
+          <p style="text-align: center; color:antiquewhite">
+            My goal is to finish in 3 days.
+          </p>
         ) : (
-        <p style="text-align: center; color:antiquewhite" >My goal is not 3 days.</p>
+          <p style="text-align: center; color:antiquewhite">
+            My goal is not 3 days.
+          </p>
         )
       }
     </p>

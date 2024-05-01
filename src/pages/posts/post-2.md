@@ -83,21 +83,22 @@ tags: ["astro", "blogging", "learning in public", "successes"]
 
 [Back to Blog](https://gryn-astro-demo.netlify.app/blog/)
 
-# My Second Post
+## My Second Post
 
-## New Learings
+### New Learings
 
 1. Familiarity with Astro - page building 'Imported my own first tint component from memory'
 2. learning to "walk around" vs code and Astro
 3. I'm learning how to use Markdown.
 
-## Taking Stock
+### Taking Stock
 
 - Feeling gooder than before though not good enough to be the goodest;
-  > thats goodly; i think ':]'
-- Presently helping with the onslaught of imposter syndrome symptomatic
-  > "feels" that have been ongoing since "fgraduation"
+   thats goodly; i think ':]'
+- Presently helping with the onslaught of imposter syndrome's  "symptomatic"
+ feels" that have been ongoing since boot camp "graduation"
 
-## Whats Next
+### Whats Next
 
 - [ ] Keep Familiarizing Myself with this environment
+- [ ] implement a 'blog'

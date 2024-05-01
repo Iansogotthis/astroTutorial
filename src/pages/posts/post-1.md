@@ -89,8 +89,8 @@ tags: ["astro", "blogging", "learning in public"]
 
 ### Published on: April 30th, 2024
 
-> <p style="text-align: center">Welcome to my new blog about learning Astro!<br/> Here, I will share my 
-> learning journey as I build a new website</p>
+ <p style="text-align: center">Welcome to my new blog about learning Astro!<br/> Here, I will share my 
+ learning journey as I build a new website</p>
 
 ### What I've Learned So Far
 

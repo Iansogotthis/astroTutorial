@@ -1,5 +1,8 @@
 ---
 const { platform, username } = Astro.props;
+import Navagation from '../components/Navagation.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <a href={`https://www.${platform}.com/${username}`}>{platform}</a>

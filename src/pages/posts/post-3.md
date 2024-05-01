@@ -87,17 +87,17 @@ tags: ["astro", "learning in public", "setbacks", "community"]
 
 ## New Learings
 
-1. Familiarity with Astro - page building is a lot easier than I thought.
+- 1. Familiarity with Astro - page building is a lot easier than I thought.
 
-2. I'm learning how to use Markdown.
-   
+- 2. I'm learning how to use Markdown.
 
 ## Taking Stock
-> So Far!!! smooth sailing, and I'm enjoying building with Astro. 
 
-> And, the [Discord community](https://astro.build/chat) is really friendly and helpful!
+ So Far!!! smooth sailing, and I'm enjoying building with Astro.
+
+ And, the [Discord community](https://astro.build/chat) is really friendly and helpful!
 
 ## Whats' Next?
 
-- [ ]  I'm going to continue to learn and build with Astro; 
+- [ ]  I'm going to continue to learn and build with Astro;
 - [ ] aiming to get more dynamic.

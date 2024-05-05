@@ -1,18 +1,18 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: "My First Blog Post"
-pubDate: "2024-04-30"
-description: "This is the first post of my new Astro blog."
-author: "Astro Learner"
+title: My Fourth Blog Post
+author: Astro Learner
+description: "This post will show up on its own!"
 image:
-  url: "https://docs.astro.build/assets/full-logo-light.png"
-  alt: "The full Astro logo on a white background."
-tags: ["astro", "blogging", "learning in public"]
+    url: "https://docs.astro.build/default-og-image.png"
+    alt: "The word astro against an illustration of planets and stars."
+pubDate: 2022-08-08
+tags: ["astro", "successes"]
 ---
 <style>
   body {
     text-align: center;
-
+    font-size: 1.23rem;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     color: #333;
@@ -27,7 +27,6 @@ tags: ["astro", "blogging", "learning in public"]
   }
 
   .container {
-    text-align: center;
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
@@ -80,27 +79,8 @@ tags: ["astro", "blogging", "learning in public"]
   p {
     margin-bottom: 20px;
   }
-  .soFar{
-    text-align: left;
-  }
 </style>
 
 [Back to Blog](https://gryn-astro-demo.netlify.app/blog/)
 
-## My First Post
-
-### Published on: April 30th, 2024
-
- <p style="text-align: center">Welcome to my new blog about learning Astro!<br/> Here, I will share my
- learning journey as I build a new website</p>
-
-### What I've Learned So Far
-
-<p class = "soFar">1. **Installing Astro**: First, I created a new Astro project and set up my online accounts.</p>
-<p class = "soFar">2. **Making a Page**: I've edited template code as well as made and published a few pages fully on my own.</p>
-<p class = "soFar">3. **A First 'Blog-type' Post**: Which is this page being viewed here.</p>
-
-### What's Next
-
-- [ ] I will finish the Astro tutorial, and then keep adding more posts.
-- [ ] Watch this space for more to come.
+This post should show up with my other blog posts, because `Astro.glob()` is returning a list of all my posts in order to create my list.
